@@ -1,0 +1,15 @@
+theme "nord"
+
+mouse_mode false // alacritty and mouse_mode don't get along
+
+keybinds {
+    unbind "Ctrl g"
+    
+    locked clear-defaults=true {
+       bind "Ctrl b" { SwitchToMode "Normal"; }
+    }
+    
+    shared_except "locked" {
+        bind "Ctrl b" { SwitchToMode "Locked"; }
+    }
+}

@@ -1,0 +1,46 @@
+add_newline = false
+
+format = """\
+  $username\
+  $hostname\
+  $directory\
+  $git_branch\
+  $git_commit\
+  $git_state\
+  $git_status\
+  $cmd_duration\
+  $custom\
+  $jobs\
+  $battery\
+  $time\
+  $character\
+  """
+#prompt_order = [
+#    "python",
+#    "username",
+#    "hostname",
+#    "kubernetes",
+#    "directory",
+#    "git_branch",
+#    "git_state",
+#    "git_status",
+#    "package",
+#    "dotnet",
+#    "golang",
+#    "java",
+#    "nodejs",
+#    "python",
+#    "ruby",
+#    "rust",
+#    "nix_shell",
+#    "conda",
+#    "memory_usage",
+#    "aws",
+#    "env_var",
+#    "cmd_duration",
+#    "line_break",
+#    "jobs",
+#    "battery",
+#    "time",
+#    "character",
+#]

@@ -1,0 +1,23 @@
+#font-family = Jetbrains Mono
+font-family = Berkeley Mono
+font-size = 16
+theme = nord
+#theme = OneHalfDark
+font-thicken = true
+adjust-underline-thickness = -50%
+macos-titlebar-tabs = true
+
+# Disable ligatures
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+
+
+macos-option-as-alt = true
+confirm-close-surface = false
+
+keybind = alt+left=esc:b
+keybind = alt+right=esc:f
+keybind = super+shift+left=previous_tab
+keybind = super+shift+right=next_tab
+
