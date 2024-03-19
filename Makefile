@@ -1,4 +1,4 @@
-SHELL := /bin/bash
+SHELL := /bin/sh
 PACKAGES := $(patsubst %/, %, $(wildcard */))
 
 help:		## Show this help.
