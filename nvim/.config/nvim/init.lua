@@ -1,6 +1,6 @@
 --[[
    MOST IMPORTANTLY, we provide a keymap "<space>sh" to [s]earch the [h]elp documentation,
-    which is very useful when you're not exactly sure of what you're looking for.
+   which is very useful when you're not exactly sure of what you're looking for.
 --]]
 
 -- Set <space> as the leader key
