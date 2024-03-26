@@ -14,8 +14,7 @@ vim.g.have_nerd_font = true
 
 if vim.g.neovide then
 	-- Put anything you want to happen only in Neovide here
-	vim.o.guifont = "Jetbrains Mono:h16" -- text below applies for VimScript
-	--	vim.g.neovide_refresh_rate = 60
+	vim.o.guifont = "Jetbrains Mono:h16"
 	vim.g.neovide_input_macos_alt_is_meta = true
 end
 
