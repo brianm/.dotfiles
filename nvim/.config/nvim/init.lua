@@ -16,7 +16,25 @@ if vim.g.neovide then
 	-- Put anything you want to happen only in Neovide here
 	vim.o.guifont = "Jetbrains Mono:h16"
 	vim.g.neovide_input_macos_alt_is_meta = true
+
+	-- Switch tabs like a sane thing :-)
+	vim.keymap.set("n", "<D-S-Left>", ":tabprevious<CR>")
+	vim.keymap.set("n", "<D-S-Right>", ":tabnext<CR>")
+
+	-- make C-v C-p etc work like normal apps
+	vim.keymap.set("n", "<D-s>", ":w<CR>") -- Save
+	vim.keymap.set("v", "<D-c>", '"+y') -- Copy
+	vim.keymap.set("n", "<D-v>", '"+P') -- Paste normal mode
+	vim.keymap.set("v", "<D-v>", '"+P') -- Paste visual mode
+	vim.keymap.set("c", "<D-v>", "<C-R>+") -- Paste command mode
+	vim.keymap.set("i", "<D-v>", '<ESC>l"+Pli') -- Paste insert mode
 end
+
+-- Allow clipboard copy paste in neovim
+vim.api.nvim_set_keymap("", "<D-v>", "+p<CR>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("!", "<D-v>", "<C-R>+", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("t", "<D-v>", "<C-R>+", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("v", "<D-v>", "<C-R>+", { noremap = true, silent = true })
 
 -- [[ Setting options ]]
 -- See `:help vim.opt`
@@ -80,7 +98,6 @@ vim.opt.scrolloff = 10
 
 -- Set highlight on search, but clear on pressing <Esc> in normal mode
 vim.opt.hlsearch = true
-vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 -- Diagnostic keymaps
 vim.keymap.set("n", "[d", vim.diagnostic.goto_prev, { desc = "Go to previous [D]iagnostic message" })
