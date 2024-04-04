@@ -17,7 +17,7 @@ if vim.g.neovide then
 	vim.o.guifont = "Jetbrains Mono:h16"
 	vim.g.neovide_input_macos_alt_is_meta = true
 
-	-- Switch tabs like a sane thing :-)
+	-- Switch tabs like a sane thing
 	vim.keymap.set("n", "<D-S-Left>", ":tabprevious<CR>")
 	vim.keymap.set("n", "<D-S-Right>", ":tabnext<CR>")
 
@@ -251,12 +251,12 @@ require("lazy").setup({
 
 				-- `build` is used to run some command when the plugin is installed/updated.
 				-- This is only run then, not every time Neovim starts up.
-				build = "make",
+				build = "gmake",
 
 				-- `cond` is a condition used to determine whether this plugin should be
 				-- installed and loaded.
 				cond = function()
-					return vim.fn.executable("make") == 1
+					return vim.fn.executable("gmake") == 1
 				end,
 			},
 			{ "nvim-telescope/telescope-ui-select.nvim" },
