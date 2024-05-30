@@ -20,3 +20,7 @@ keybind = alt+left=esc:b
 keybind = alt+right=esc:f
 keybind = super+shift+left=previous_tab
 keybind = super+shift+right=next_tab
+
+# # disable bar cursor
+# shell-integration-features = no-cursor
+cursor-style-blink = false

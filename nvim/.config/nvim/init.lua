@@ -15,8 +15,7 @@ vim.g.have_nerd_font = true
 if vim.g.neovide then
 	-- Put anything you want to happen only in Neovide here
 	vim.o.guifont = "Jetbrains Mono:h16"
-	vim.g.neovide_input_macos_alt_is_meta = true
-
+	vim.g.neovide_input_macos_option_key_is_meta = true
 	-- Switch tabs like a sane thing
 	vim.keymap.set("n", "<D-S-Left>", ":tabprevious<CR>")
 	vim.keymap.set("n", "<D-S-Right>", ":tabnext<CR>")
