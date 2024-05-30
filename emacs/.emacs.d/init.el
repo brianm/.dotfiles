@@ -2,7 +2,6 @@
 (setq inhibit-startup-message t)
 (setq exec-path
       (append exec-path '("/usr/local/bin"
-			  "~/homebrew/bin"
 			  "/opt/homebrew/bin"
 			  "~/.bin"
 			  "~/bin")))
@@ -25,20 +24,20 @@
 (setq visible-bell nil) ;; The default
 (setq ring-bell-function 'ignore)
 (setq default-tab-width 4)
-(load-theme 'nord t)
+; (load-theme 'nord t)
+(load-theme 'tokyo t)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 160 :width normal :foundry "apple" :family "Menlo")))))
+ '(default ((t (:inherit nil :stipple nil :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 160 :width normal :foundry "apple" :family "Berkeley Mono")))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages
-   '(counsel ivy markdown-mode nord-theme))
+  '(package-selected-packages '(counsel ivy markdown-mode nord-theme))
  '(tool-bar-mode nil))
