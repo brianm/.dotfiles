@@ -6,7 +6,7 @@ theme = nord
 #theme = OneHalfDark
 font-thicken = true
 adjust-underline-thickness = -50%
-macos-titlebar-tabs = true
+macos-titlebar-style = tabs
 
 # Disable ligatures
 font-feature = -calt
