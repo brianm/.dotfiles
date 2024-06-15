@@ -7,6 +7,9 @@ theme = nord
 font-thicken = true
 adjust-underline-thickness = -50%
 macos-titlebar-style = tabs
+window-height = 24
+window-width = 120
+
 
 # Disable ligatures
 font-feature = -calt
