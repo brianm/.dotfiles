@@ -24,7 +24,7 @@
 (setq visible-bell nil) ;; The default
 (setq ring-bell-function 'ignore)
 (setq default-tab-width 4)
-; (load-theme 'nord t)
+;(load-theme 'nord t)
 (load-theme 'tokyo t)
 
 (custom-set-faces

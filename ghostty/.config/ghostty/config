@@ -1,9 +1,6 @@
-#font-family = Jetbrains Mono
 font-family = Berkeley Mono
 font-size = 16
 theme = nord
-#theme = tokyonight
-#theme = OneHalfDark
 font-thicken = true
 adjust-underline-thickness = -50%
 macos-titlebar-style = tabs
@@ -25,5 +22,5 @@ keybind = super+shift+left=previous_tab
 keybind = super+shift+right=next_tab
 
 # # disable bar cursor
-# shell-integration-features = no-cursor
 cursor-style-blink = false
+shell-integration-features = title,sudo 
