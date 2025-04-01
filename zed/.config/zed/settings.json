@@ -1,0 +1,64 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "languages": {
+    "Markdown": {
+      "show_edit_predictions": false,
+      "show_completions_on_input": false,
+      "remove_trailing_whitespace_on_save": false
+    }
+  },
+  "features": {
+    "edit_prediction_provider": "zed"
+  },
+  "theme": "One Dark",
+  "buffer_font_size": 16,
+  "buffer_font_family": "Berkeley Mono",
+  "seed_search_query_from_cursor": "selection",
+  // "format_on_save": "off",
+  "remove_trailing_whitespace_on_save": true,
+  "always_treat_brackets_as_autoclosed": true,
+  "restore_on_startup": "none",
+
+  "tabs": {
+    "git_status": true,
+    "close_position": "left"
+  },
+
+  "project_panel": {
+    "auto_fold_dirs": true,
+    "indent_size": 12,
+    "indent_guides": {
+      "show": "never"
+    }
+  },
+
+  "edit_predictions": {
+    "mode": "subtle"
+  },
+
+  "show_wrap_guides": true,
+  "preferred_line_length": 120,
+  "soft_wrap": "preferred_line_length",
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+
+  "language_overrides": {
+    "Python": {
+      "format_on_save": {
+        "external": {
+          "command": "ruff",
+          "arguments": ["format", "-"]
+        }
+      }
+    }
+  }
+}

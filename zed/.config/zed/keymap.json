@@ -1,0 +1,10 @@
+[
+  {
+    // disable enter selecting completion, which is stupid
+    "context": "Editor && showing_completions",
+    "bindings": {
+      "enter": "editor::Newline",
+      "escape": "editor::Cancel"
+    }
+  }
+]
