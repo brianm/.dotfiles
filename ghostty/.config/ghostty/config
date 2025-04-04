@@ -1,6 +1,8 @@
 font-family = Berkeley Mono
 font-size = 16
-theme = nord
+# theme = nord
+# theme = catppuccin-macchiato
+theme = catppuccin-frappe
 font-thicken = true
 adjust-underline-thickness = -50%
 macos-titlebar-style = tabs
@@ -23,4 +25,4 @@ keybind = super+shift+right=next_tab
 
 # # disable bar cursor
 cursor-style-blink = false
-shell-integration-features = title,sudo 
+shell-integration-features = title,sudo
