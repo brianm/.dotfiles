@@ -1,8 +1,8 @@
 font-family = Berkeley Mono
 font-size = 16
-# theme = nord
+theme = nord
 # theme = catppuccin-macchiato
-theme = catppuccin-frappe
+# theme = catppuccin-frappe
 font-thicken = true
 adjust-underline-thickness = -50%
 macos-titlebar-style = tabs
