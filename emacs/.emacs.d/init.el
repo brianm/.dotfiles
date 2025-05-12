@@ -40,5 +40,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
-   '(lsp-treemacs flycheck lsp-mode counsel ivy markdown-mode nord-theme))
+   '(bind-key counsel flycheck ivy lsp-mode lsp-treemacs markdown-mode
+	      nord-theme))
  '(tool-bar-mode nil))
