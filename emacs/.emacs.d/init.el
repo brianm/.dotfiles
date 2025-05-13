@@ -26,8 +26,10 @@
 (setq default-tab-width 4)
 ;;;(load-theme 'nord t)
 ;;;(load-theme 'tokyo t)
-(load-theme 'kanagawa-wave)
 
+(setq kanagawa-themes-comment-italic nil)
+(setq kanagawa-themes-keyword-italic nil)
+(load-theme 'kanagawa-wave t)
 
 
 (custom-set-faces
@@ -48,6 +50,5 @@
      "daa27dcbe26a280a9425ee90dc7458d85bd540482b93e9fa94d4f43327128077"
      default))
  '(package-selected-packages
-   '(bind-key counsel flycheck ivy kanagawa-themes lsp-mode lsp-treemacs
-	      markdown-mode nord-theme))
+   '(bind-key counsel flycheck ivy kanagawa-themes markdown-mode nord-theme))
  '(tool-bar-mode nil))
