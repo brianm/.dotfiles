@@ -3,6 +3,7 @@ font-size = 16
 theme = nord
 # theme = catppuccin-macchiato
 # theme = catppuccin-frappe
+# theme = Kanagawa Wave
 font-thicken = true
 adjust-underline-thickness = -50%
 macos-titlebar-style = tabs
