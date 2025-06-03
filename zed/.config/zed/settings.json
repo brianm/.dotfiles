@@ -9,10 +9,14 @@
 {
   "icon_theme": "Catppuccin Mocha",
   "agent": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-latest"
+    },
     "model_parameters": [],
     "inline_assistant_model": {
       "provider": "zed.dev",
-      "model": "claude-3-7-sonnet-latest"
+      "model": "claude-sonnet-4-latest"
     },
     "version": "2"
   },
@@ -20,7 +24,7 @@
     "Markdown": {
       "show_edit_predictions": false,
       "show_completions_on_input": false,
-      "remove_trailing_whitespace_on_save": false
+      "remove_trailing_whitespace_on_save": true
     }
   },
   "features": {
@@ -37,7 +41,8 @@
 
   "tabs": {
     "git_status": true,
-    "close_position": "left"
+    "close_position": "left",
+    "file_icons": true
   },
 
   "project_panel": {
@@ -53,8 +58,16 @@
   },
 
   "show_wrap_guides": true,
-  "preferred_line_length": 120,
+  "preferred_line_length": 80,
   "soft_wrap": "preferred_line_length",
+  "show_whitespaces": "selection",
+  "show_indent_guides": true,
+  "indent_guides": {
+    "enabled": true,
+    "line_width": 1,
+    "active_line_width": 2
+  },
+
   "telemetry": {
     "diagnostics": false,
     "metrics": false
