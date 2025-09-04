@@ -3,6 +3,3 @@ if status is-interactive
 end
 
 bind \cx\ce edit_command_buffer
-
-# uv
-fish_add_path "/Users/bmcc/.local/bin"
