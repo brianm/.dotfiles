@@ -11,14 +11,13 @@
   "agent": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4-latest"
+      "model": "claude-sonnet-4"
     },
     "model_parameters": [],
     "inline_assistant_model": {
       "provider": "zed.dev",
       "model": "claude-sonnet-4-latest"
-    },
-    "version": "2"
+    }
   },
   "languages": {
     "Markdown": {
@@ -58,10 +57,9 @@
   },
 
   "show_wrap_guides": true,
-  "preferred_line_length": 80,
+  "preferred_line_length": 120,
   "soft_wrap": "preferred_line_length",
   "show_whitespaces": "selection",
-  "show_indent_guides": true,
   "indent_guides": {
     "enabled": true,
     "line_width": 1,
@@ -71,16 +69,5 @@
   "telemetry": {
     "diagnostics": false,
     "metrics": false
-  },
-
-  "language_overrides": {
-    "Python": {
-      "format_on_save": {
-        "external": {
-          "command": "ruff",
-          "arguments": ["format", "-"]
-        }
-      }
-    }
   }
 }
