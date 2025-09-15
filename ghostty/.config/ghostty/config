@@ -11,7 +11,6 @@ macos-titlebar-style = tabs
 window-height = 24
 window-width = 120
 
-
 # Disable ligatures
 font-feature = -calt
 font-feature = -liga
@@ -25,6 +24,10 @@ keybind = alt+right=esc:f
 keybind = super+shift+left=previous_tab
 keybind = super+shift+right=next_tab
 
-# # disable bar cursor
+# quick terminal
+keybind = global:cmd+grave_accent=toggle_quick_terminal
+quick-terminal-position = bottom
+
+# disable bar cursor
 cursor-style-blink = false
-shell-integration-features = title,sudo
+shell-integration-features = title,sudo,ssh-terminfo
